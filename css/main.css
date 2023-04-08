@@ -18,15 +18,10 @@ h1{
 
 /* estilos en el header */
 
-#logo{
-    width: 400px;
-    height: 100px;
-}
+
 
 #arriba{
     background-color: black;
-    text-align: center;
-    padding: 20px 30px 20px;
 }
 
 /* estilo para el footer */
@@ -36,27 +31,18 @@ footer{
 }
 
 
-/* estilos del menu*/
 
+/* estilos del menu levantado de bootstrap */
 
-.menu{
-    background-color: gainsboro;
-    position: sticky;
-    top: 0;
-    z-index: 2;
+.color-menu{
+    color: whitesmoke;
 }
 
-.menu ul li{
-    margin: 10px;
-    padding: 10px;
-    display: inline-block;
-    list-style: none;
+.color-menu:hover{
+    border-bottom: 2px solid gainsboro;
+    color: whitesmoke;
 }
 
-.menu ul li a{
-    text-decoration: none;
-    color: black;
-}
 
 
 /*estilos en index.html*/
