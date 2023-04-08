@@ -1,0 +1,90 @@
+<!-- Código creado por Fernando Bruno - Comisión 52170 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link de mi CSS -->
+    <link rel="stylesheet" href="../css/main.css">
+    <!-- agregado de fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,300;0,600;1,400&display=swap" rel="stylesheet">
+    <title>Contacto</title>
+</head>
+<body>
+
+    <!-- Encabezado o header-->
+
+    <header id="arriba">
+        <img id="logo"  src="../img/logo.jpg" alt="Abbey Road Studios">
+        <nav class="menu"> <!-- menu de navegación -->
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="qa.html">Q&A</a></li>
+                <li>Contacto</li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Cuerpo principal de nuestra página -->
+
+    <main class="frente">
+        <h1>¿Querés contactarnos?</h1>
+        <form>
+            <fieldset class="contacto"> <!-- Cuadro para contactarse  -->
+                <legend> Dejanos tu consulta </legend> 
+                
+                <div>
+                    <label for="nombre">
+                            Completa tu nombre 
+                    </label>
+
+                    <input type="text" name="nombres" id="nombre">
+                </div>
+                
+                <div>
+                    <label for="email">
+                        Completa tu email
+                    </label>
+                    <input type="email" id="email">
+                </div>
+
+                <div>
+                    <label for="text">
+                        Escriba su consulta
+                    </label>
+                    <input type="text" id="campo">
+                </div>
+                <div>
+                    <input type="submit">
+                    <input type="reset">
+                </div>
+            </fieldset>
+        </form>
+
+        <!-- Ubicación por mapa y dirección-->
+
+        <div>
+            <h2> Nuestra ubicación </h2>
+            <div> <!-- link de google maps -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2481.9717098186075!2d-0.18026458402189857!3d51.53207871671913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761aa33eb87a9b%3A0xe406bb492eaf555b!2sAbbey%20Road%20Studios!5e0!3m2!1ses!2sar!4v1679291507869!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <p>Abbey Road Studios | 3 Abbey Road | St. John's Wood London NW8 9AY | tel: +44 (0)20 7266 7000</p>
+        </div>
+    </main>
+
+    <!--Pie de página footer-->
+    
+    <footer>
+        <h3>Todos los derechos reservados</h3>
+        <div>
+            <p><a href="#arriba">Ir para arriba</a></p>
+        </div>
+    </footer>
+    
+</body>
+</html>
