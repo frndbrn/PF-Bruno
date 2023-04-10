@@ -54,6 +54,14 @@ footer{
     display: inline-block;
 }
 
+.noticia img{
+    width: 220px; 
+    height: 165px;
+}
+
+.noticias{
+    font-weight: bold;
+}
 
 .frente{ /* --> la clase frente del main es compartida por los html home, store, nosotros y contacto */
     background-color: gainsboro;
@@ -62,9 +70,14 @@ footer{
 }
 
 .front{
+    max-width: 100%;
     height: auto;
-    display: block;
-    margin: auto;
+}
+
+.entrada{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 
