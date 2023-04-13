@@ -2,48 +2,48 @@
 
 /* reset de página*/
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* estilos de la etiqueta h*/
 
 
-h1{
-    color:darkred;
+h1 {
+    color: darkred;
 }
 
 /* estilos en el header */
 
 
 
-#arriba{
+#arriba {
     background-color: black;
 }
 
 /* estilo para el footer */
 
-footer{
+footer {
     background-color: gainsboro;
 }
 
-footer p{
+footer p {
     margin: 0;
-  }
-  
+}
+
 
 
 
 /* estilos del menu levantado de bootstrap */
 
-.color-menu{
+.color-menu {
     color: whitesmoke;
 }
 
-.color-menu:hover{
+.color-menu:hover {
     border-bottom: 2px solid gainsboro;
     color: whitesmoke;
 }
@@ -53,49 +53,74 @@ footer p{
 /*estilos en index.html*/
 
 
-.noticia{
+.noticia {
     margin: 20px;
     text-align: center;
     display: inline-block;
 }
 
-.noticia img{
-    width: 220px; 
+.noticia p{
+    margin-top: 5px;
+}
+
+.noticia img {
+    width: 220px;
     height: 165px;
 }
 
-.noticias{
+.noticia p:hover{
+    background-color: rgb(189, 162, 162);
+}
+
+.noticias {
     font-weight: bold;
 }
 
-.frente{ /* --> la clase frente del main es compartida por los html home, store, nosotros y contacto */
+.frente {
+    /* --> la clase frente del main es compartida por todos menos qa.html */
     background-color: gainsboro;
     text-align: center;
     color: black;
 }
 
+.news h2{
+    margin-top: 5px;
+    font-weight: bold;
+}
 
-
-.entrada{
+.entrada {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
 }
 
-.vertical{
+.vertical {
     display: none;
+}
+
+/* estilos en nosotros.html */
+
+.parte iframe {
+    width: 800px;
+    height: 450px;
+  }
+
+  .parte img{
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 
 /*estilos en store.html*/
 
 
-.productos{
+.productos {
     margin-top: 10px;
     padding-bottom: 30px;
 }
 
-.caja{
+.caja {
     background-color: whitesmoke;
     width: 240px;
     height: 240px;
@@ -107,13 +132,13 @@ footer p{
     display: inline-block;
 }
 
-.comprar{
+.comprar {
     margin-top: 20px;
     padding: 10px;
     border: 2px solid black;
 }
 
-.deseados{
+.deseados {
     margin-top: 20px;
     padding: 10px;
     border: 2px solid black;
@@ -123,20 +148,20 @@ footer p{
 /*estilos de qa.html*/
 
 
-.preguntas{
+.preguntas {
     margin-top: 50px;
     margin-left: 50px;
 }
 
-.frenteQA{
+.frenteQA {
     background-color: gainsboro;
 }
 
-.frenteQA h2{
+.frenteQA h2 {
     margin: 0;
 }
 
-ol{
+ol {
     padding: 20px;
 }
 
@@ -144,23 +169,23 @@ ol{
 /* estilos de contacto.html */
 
 
-.contacto{
+.contacto {
     width: 300px;
     margin: auto;
 }
 
-#campo{
+#campo {
     width: 300px;
     height: 100px;
 
 }
 
-.mapa{
+.mapa {
     position: relative;
     bottom: 0;
 }
 
-.direccion p{
+.direccion p {
     margin: 0;
 }
 
@@ -168,110 +193,121 @@ ol{
 /* MEDIA QUERIES (APLICADO PARA EL INDEX)*/
 
 
-@media screen and (min-width:768px) and (max-width:1024px){ /*defino el ancho de pantalla para tablet*/
-    
-    
+@media screen and (min-width:768px) and (max-width:1024px) {
+    /*defino el ancho de pantalla para tablet*/
+    /* estilos para el index */
+
+
     .entrada {
         display: grid;
         grid-template-columns: 45% 55%;
         grid-template-rows: 0.2fr 1fr;
-        
-      }
-      
-      .entrada h1 {
+
+    }
+
+    .entrada h1 {
         margin: 10px;
         grid-row-start: 1;
         grid-row-end: 2;
         grid-column: span 2;
         justify-self: center;
-      }
-      
-      .entrada p {
+    }
+
+    .entrada p {
         grid-column: span 1;
         justify-self: center;
         align-self: center;
-      }
-      
-      .front{
-        display: none;
-      }
+    }
 
-      .vertical {
+    .front {
+        display: none;
+    }
+
+    .vertical {
         display: block;
         grid-column: 2;
-        max-width: 100%;
-        height: auto;
-      }
+    }
 
-      .news {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto 1fr;
-        gap: 10px;
-      }
-      
-      .news h2 {
-        grid-column: 1 / span 2;
-        text-align: center;
-      }
-      
-      .noticia-1 {
-        grid-row: 2 / 3;
-        grid-column: 1 / 2;
-      }
-      
-      .noticia-2 {
-        grid-row: 2 / 3;
-        grid-column: 2 / 3;
-      }
-      
-      .noticia-3 {
-        grid-row: 3 / 4;
-        grid-column: 1 / span 2;
-      }
-
-}
-
-@media screen and (max-width:768px){ /*defino el ancho de pantalla para smartphone*/
-    
-
-    .entrada {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.2fr 0.4fr 1fr;
-        
-      }
-      
-      .entrada h1 {
-        grid-row: 1;
-        margin-top: 10px;
-        justify-self: center;
-      }
-
-      .entrada p{
-        grid-row: 2;
-      }
-      
-      
-      .front{
-        display: none;
-      }
-      .vertical{
-        grid-row: 3;
-        display: block;
-      }
-      .vertical img{
+    .vertical img {
         max-width: 100%;
         height: auto;
         object-fit: cover;
+    }
+
+    .noticias {
+        display: grid;
+        grid-template-columns: repeat(2, 0.5fr);
+        grid-template-rows: repeat(2, 0.5fr);
+        gap: 10px;
+    }
+
+    .news h2 {
+        text-align: center;
+    }
+    
+    /*estilos para nosotros.html */
+    
+    
+    .parte iframe {
+        width: 600px;
+        height: 338px;
       }
+
 
 }
 
+@media screen and (max-width:767px) {
+    /*defino el ancho de pantalla para smartphone*/
+    /* estilos para el index */
+    .entrada{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr auto;
+    }
 
 
+    .entrada h1 {
+        margin-top: 10px;
+        justify-self: center;
+        display: inline-block;
+    }
 
+    .cuerpo {
+        padding: 10px;
+    }
 
+    .noticias {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        justify-content: center;
+    }
 
+    .front {
+        display: none;
+    }
 
+    .vertical {
+        display: block;
+    }
 
+    .vertical img {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .noticia img {
+        width: 300px;
+        height: 245px;
+    }
+    /*estilos para nosotros.html */
+
+   
+
+    .parte iframe {
+        width: 225px;
+        height: 100px;
+      }
+
+}
