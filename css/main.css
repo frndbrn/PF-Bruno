@@ -30,6 +30,11 @@ footer{
     background-color: gainsboro;
 }
 
+footer p{
+    margin: 0;
+  }
+  
+
 
 
 /* estilos del menu levantado de bootstrap */
@@ -127,6 +132,10 @@ footer{
     background-color: gainsboro;
 }
 
+.frenteQA h2{
+    margin: 0;
+}
+
 ol{
     padding: 20px;
 }
@@ -151,13 +160,20 @@ ol{
     bottom: 0;
 }
 
+.direccion p{
+    margin: 0;
+}
+
+
+/* MEDIA QUERIES (APLICADO PARA EL INDEX)*/
+
 
 @media screen and (min-width:768px) and (max-width:1024px){ /*defino el ancho de pantalla para tablet*/
     
     
     .entrada {
         display: grid;
-        grid-template-columns: 20% 25% 55%;
+        grid-template-columns: 45% 55%;
         grid-template-rows: 0.2fr 1fr;
         
       }
@@ -166,12 +182,12 @@ ol{
         margin: 10px;
         grid-row-start: 1;
         grid-row-end: 2;
-        grid-column: span 3;
+        grid-column: span 2;
         justify-self: center;
       }
       
       .entrada p {
-        grid-column: span 2;
+        grid-column: span 1;
         justify-self: center;
         align-self: center;
       }
@@ -182,16 +198,43 @@ ol{
 
       .vertical {
         display: block;
-        grid-column: 3;
+        grid-column: 2;
         max-width: 100%;
         height: auto;
+      }
+
+      .news {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto 1fr;
+        gap: 10px;
+      }
+      
+      .news h2 {
+        grid-column: 1 / span 2;
+        text-align: center;
+      }
+      
+      .noticia-1 {
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+      }
+      
+      .noticia-2 {
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;
+      }
+      
+      .noticia-3 {
+        grid-row: 3 / 4;
+        grid-column: 1 / span 2;
       }
 
 }
 
 @media screen and (max-width:768px){ /*defino el ancho de pantalla para smartphone*/
     
-    
+
     .entrada {
         display: grid;
         grid-template-columns: 1fr;
@@ -209,17 +252,18 @@ ol{
         grid-row: 2;
       }
       
-
       
       .front{
         display: none;
       }
-
-      .vertical {
+      .vertical{
         grid-row: 3;
         display: block;
+      }
+      .vertical img{
         max-width: 100%;
         height: auto;
+        object-fit: cover;
       }
 
 }
