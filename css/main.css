@@ -150,6 +150,15 @@ footer p {
     border: 2px solid black;
 }
 
+.caja button:hover{
+    background-color: rgb(187, 187, 187);
+}
+
+.caja button:active{
+    background-color: rgb(44, 44, 44);
+    color: white;
+}
+
 
 /*estilos de qa.html*/
 
@@ -307,14 +316,6 @@ ol {
     gap: 10px;
     }
 
-    .caja button:hover{
-        background-color: rgb(187, 187, 187);
-    }
-
-    .caja button:active{
-        background-color: rgb(44, 44, 44);
-        color: white;
-    }
 
 
     /*estilos para contacto.html */
