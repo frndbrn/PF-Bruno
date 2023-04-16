@@ -48,7 +48,7 @@ footer p {
     color: whitesmoke;
 }
 
-
+/*estilos generales de los html en modo escritorio*/
 
 /*estilos en index.html*/
 
@@ -68,6 +68,7 @@ footer p {
     height: 165px;
 }
 
+/* pseudoclase para .noticia */
 .noticia p:hover {
     background-color: rgb(189, 162, 162);
 }
@@ -100,6 +101,8 @@ footer p {
 
 /* estilos en nosotros.html */
 
+/* cambio la resolucion del video en .parte-dos */
+
 .parte-dos iframe {
     width: 800px;
     height: 450px;
@@ -130,9 +133,9 @@ footer p {
     align-items: center;
     justify-content: center;
     text-align: center;
-  }
+}
 
-.caja img{
+.caja img {
     border: 10px double black;
 }
 
@@ -150,11 +153,13 @@ footer p {
     border: 2px solid black;
 }
 
-.caja button:hover{
+/* pseudoclase para .caja */
+
+.caja button:hover {
     background-color: rgb(187, 187, 187);
 }
 
-.caja button:active{
+.caja button:active {
     background-color: rgb(44, 44, 44);
     color: white;
 }
@@ -173,7 +178,7 @@ footer p {
     background-color: gainsboro;
 }
 
-.frente-QA h1{
+.frente-QA h1 {
     text-align: center;
 }
 
@@ -193,6 +198,7 @@ ol {
     width: 300px;
     margin: auto;
 }
+
 
 .frente-contacto {
     height: 900px;
@@ -232,13 +238,14 @@ ol {
 }
 
 
-/* MEDIA QUERIES (APLICADO PARA EL INDEX)*/
+/* MEDIA QUERIES */
 
+/*defino el ancho de pantalla para tablet*/
 
 @media screen and (min-width:768px) and (max-width:1024px) {
-    /*defino el ancho de pantalla para tablet*/
-    /* estilos para el index */
 
+    /* estilos para el index */
+    /* estructuro mi seccion de la pagina como grid */
 
     .entrada {
         display: grid;
@@ -260,7 +267,7 @@ ol {
         justify-self: center;
         align-self: center;
     }
-
+    /* oculto la imagen que tenia en modo escritorio y muestro la imagen para la version tablet */
     .front {
         display: none;
     }
@@ -270,11 +277,15 @@ ol {
         grid-column: 2;
     }
 
+
     .vertical img {
         max-width: 100%;
         height: auto;
         object-fit: cover;
     }
+
+    /* estructuro mi segunda seccion de la pagina como grid */
+
 
     .noticias {
         display: grid;
@@ -289,11 +300,15 @@ ol {
 
     /*estilos para nosotros.html */
 
+    /* cambio la resolucion del video en .parte-dos */
 
     .parte-dos iframe {
         width: 600px;
         height: 338px;
     }
+
+    /* estructuro mi seccion de la pagina como grid */
+
 
     .parte-uno {
         display: grid;
@@ -314,15 +329,18 @@ ol {
 
 
     .productos {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 10px;
     }
 
 
 
     /*estilos para contacto.html */
+
+    /*cambio la resolucion de la ventana de google maps y del text box para escribir comentarios de consultas*/
+
 
     .link {
         width: 500px;
@@ -337,10 +355,15 @@ ol {
 
 }
 
+/*defino el ancho de pantalla para smartphone*/
+
 @media screen and (max-width:767px) {
 
-    /*defino el ancho de pantalla para smartphone*/
     /* estilos para el index */
+
+    /* estructuro mi seccion de la pagina como grid */
+
+
     .entrada {
         display: grid;
         grid-template-columns: 1fr;
@@ -358,12 +381,17 @@ ol {
         padding: 10px;
     }
 
+    /* estructuro mi seccion de la pagina como grid */
+
+
     .noticias {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         justify-content: center;
     }
+
+    /* oculto la imagen que tenia en modo escritorio y muestro la imagen para la version tablet */
 
     .front {
         display: none;
@@ -387,11 +415,14 @@ ol {
     /*estilos para nosotros.html */
 
 
+    /* cambio la resolucion del video en .parte-dos */
 
     .parte-dos iframe {
         width: 225px;
         height: 100px;
     }
+
+    /* estructuro mi seccion de la pagina como grid */
 
     .productos {
         display: grid;
@@ -401,10 +432,12 @@ ol {
 
 
     /*estilos para contacto.html */
+
     .frente-contacto {
         display: inline-block;
     }
 
+    /*cambio la resolucion de la ventana de google maps y del text box para escribir comentarios de consultas*/
 
     .link {
         width: 400px;
