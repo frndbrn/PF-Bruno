@@ -1,453 +1,287 @@
+@charset "UTF-8";
 /* Código creado por Fernando Bruno - Comisión 52170 */
-
 /* reset de página*/
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-/* estilos de la etiqueta h*/
-
-
-h1 {
-    color: darkred;
-}
-
-/* estilos en el header */
-
-
-
-#arriba {
-    background-color: black;
-}
-
-/* estilo para el footer */
-
-footer {
-    background-color: gainsboro;
-}
-
-footer p {
-    margin: 0;
-}
-
-
-
-
-/* estilos del menu levantado de bootstrap */
-
-.color-menu {
-    color: whitesmoke;
-}
-
-.color-menu:hover {
-    border-bottom: 2px solid gainsboro;
-    color: whitesmoke;
-}
-
-/*estilos generales de los html en modo escritorio*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
 
 /*estilos en index.html*/
-
-
 .noticia {
-    margin: 20px;
-    text-align: center;
-    display: inline-block;
-}
-
-.noticia p {
-    margin-top: 5px;
-}
-
-.noticia img {
+  margin: 20px;
+  text-align: center;
+  display: inline-block; }
+  .noticia p {
+    margin-top: 5px; }
+  .noticia img {
     width: 220px;
-    height: 165px;
-}
-
-/* pseudoclase para .noticia */
-.noticia p:hover {
-    background-color: rgb(189, 162, 162);
-}
+    height: 165px; }
+  .noticia p:hover {
+    /* pseudoclase para .noticia */
+    background-color: #bda2a2; }
 
 .noticias {
-    font-weight: bold;
-}
+  font-weight: bold; }
 
 .frente {
-    /* --> la clase frente del main es compartida por todos menos qa.html */
-    background-color: gainsboro;
-    text-align: center;
-    color: black;
-}
+  /* --> la clase frente del main es compartida por todos menos qa.html */
+  text-align: center;
+  color: black; }
 
 .news h2 {
-    margin-top: 5px;
-    font-weight: bold;
-}
+  margin-top: 5px;
+  font-weight: bold; }
 
 .entrada {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-}
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding-left: 150px;
+  padding-right: 150px; }
 
 .vertical {
-    display: none;
-}
+  display: none; }
 
 /* estilos en nosotros.html */
-
 /* cambio la resolucion del video en .parte-dos */
-
 .parte-dos iframe {
-    width: 800px;
-    height: 450px;
-}
+  width: 800px;
+  height: 450px; }
 
 .parte-uno img {
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-
-
+  max-width: 100%;
+  height: auto;
+  object-fit: cover; }
 
 /*estilos en store.html*/
-
-
 .productos {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 10px;
-}
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px; }
 
 .caja {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.caja img {
-    border: 10px double black;
-}
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center; }
+  .caja img {
+    border: 10px double black; }
+  .caja button:hover {
+    background-color: #bbbbbb; }
+  .caja button:active {
+    background-color: #2c2c2c;
+    color: white; }
 
 .comprar {
-    margin-top: 20px;
-    padding: 10px;
-    border: 2px solid black;
-}
+  margin-top: 20px;
+  padding: 10px;
+  border: 2px solid black; }
 
 .deseados {
-    margin-top: 20px;
-    margin-bottom: 10px;
-    padding: 10px;
-    border: 2px solid black;
-}
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 2px solid black; }
 
 /* pseudoclase para .caja */
-
-.caja button:hover {
-    background-color: rgb(187, 187, 187);
-}
-
-.caja button:active {
-    background-color: rgb(44, 44, 44);
-    color: white;
-}
-
-
 /*estilos de qa.html*/
-
-
-
 .preguntas {
-    margin-top: 50px;
-    margin-left: 50px;
-}
-
-.frente-QA {
-    background-color: gainsboro;
-}
+  margin-top: 50px;
+  margin-left: 50px; }
 
 .frente-QA h1 {
-    text-align: center;
-}
+  text-align: center; }
 
 .frente-QA h2 {
-    margin: 0;
-}
+  margin: 0; }
 
 ol {
-    padding: 20px;
-}
-
+  padding: 20px; }
 
 /* estilos de contacto.html */
-
-
 .contacto {
-    width: 300px;
-    margin: auto;
-}
-
+  width: 300px;
+  margin: auto; }
 
 .frente-contacto {
-    height: 900px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 0.1fr 1fr;
-    grid-gap: 10px;
-
-}
-
-.link {
-    width: 700px;
-    height: 600px;
-}
-
-.frente-contacto h1 {
+  height: 900px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 0.1fr 1fr;
+  grid-gap: 10px; }
+  .frente-contacto h1 {
     margin: 10px;
     grid-row-start: 1;
     grid-row-end: 2;
     grid-column: span 2;
-    justify-self: center;
-}
+    justify-self: center; }
+
+.link {
+  width: 700px;
+  height: 600px; }
 
 #campo {
-    width: 300px;
-    height: 300px;
-
-}
+  width: 300px;
+  height: 300px; }
 
 .mapa {
-    position: relative;
-    bottom: 0;
-}
+  position: relative;
+  bottom: 0; }
 
 .direccion p {
-    margin: 0;
-}
-
-
-/* MEDIA QUERIES */
+  margin: 0; }
 
 /*defino el ancho de pantalla para tablet*/
-
-@media screen and (min-width:768px) and (max-width:1024px) {
-
-    /* estilos para el index */
-    /* estructuro mi seccion de la pagina como grid */
-
-    .entrada {
-        display: grid;
-        grid-template-columns: 45% 55%;
-        grid-template-rows: 0.2fr 1fr;
-
-    }
-
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* estilos para el index */
+  /* estructuro mi seccion de la pagina como grid */
+  .entrada {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-rows: 0.2fr 1fr;
+    padding-left: 20px;
+    padding-right: 20px; }
     .entrada h1 {
-        margin: 10px;
-        grid-row-start: 1;
-        grid-row-end: 2;
-        grid-column: span 2;
-        justify-self: center;
-    }
-
+      margin: 10px;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      grid-column: span 2;
+      justify-self: center; }
     .entrada p {
-        grid-column: span 1;
-        justify-self: center;
-        align-self: center;
-    }
-    /* oculto la imagen que tenia en modo escritorio y muestro la imagen para la version tablet */
-    .front {
-        display: none;
-    }
-
-    .vertical {
-        display: block;
-        grid-column: 2;
-    }
-
-
+      grid-column: span 1;
+      justify-self: center;
+      align-self: center; }
+  /* oculto la imagen que tenia en modo escritorio y muestro la imagen para la version tablet */
+  .front {
+    display: none; }
+  .vertical {
+    display: block;
+    grid-column: 2; }
     .vertical img {
-        max-width: 100%;
-        height: auto;
-        object-fit: cover;
-    }
-
-    /* estructuro mi segunda seccion de la pagina como grid */
-
-
-    .noticias {
-        display: grid;
-        grid-template-columns: repeat(2, 0.5fr);
-        grid-template-rows: repeat(2, 0.5fr);
-        gap: 10px;
-    }
-
-    .news h2 {
-        text-align: center;
-    }
-
-    /*estilos para nosotros.html */
-
-    /* cambio la resolucion del video en .parte-dos */
-
-    .parte-dos iframe {
-        width: 600px;
-        height: 338px;
-    }
-
-    /* estructuro mi seccion de la pagina como grid */
-
-
-    .parte-uno {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto;
-    }
-
+      max-width: 100%;
+      height: auto;
+      object-fit: cover; }
+  /* estructuro mi segunda seccion de la pagina como grid */
+  .noticias {
+    display: grid;
+    grid-template-columns: repeat(2, 0.5fr);
+    grid-template-rows: repeat(2, 0.5fr);
+    gap: 10px; }
+  .news h2 {
+    text-align: center; }
+  /*estilos para nosotros.html */
+  /* cambio la resolucion del video en .parte-dos */
+  .parte-dos iframe {
+    width: 600px;
+    height: 338px; }
+  /* estructuro mi seccion de la pagina como grid */
+  .parte-uno {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto; }
     .parte-uno p {
-        grid-column: 1;
-        align-self: center;
-    }
-
+      grid-column: 1;
+      align-self: center; }
     .parte-uno img {
-        grid-column: 2;
-    }
-
-    /*estilos en store.html*/
-
-
-    .productos {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        gap: 10px;
-    }
-
-
-
-    /*estilos para contacto.html */
-
-    /*cambio la resolucion de la ventana de google maps y del text box para escribir comentarios de consultas*/
-
-
-    .link {
-        width: 500px;
-        height: 400px;
-        max-width: 100%;
-    }
-
-    #campo {
-        width: 300px;
-        height: 100px;
-    }
-
-}
+      grid-column: 2; }
+  /*estilos en store.html*/
+  .productos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px; }
+  /*estilos para contacto.html */
+  /*cambio la resolucion de la ventana de google maps y del text box para escribir comentarios de consultas*/
+  .link {
+    width: 500px;
+    height: 400px;
+    max-width: 100%; }
+  #campo {
+    width: 300px;
+    height: 100px; } }
 
 /*defino el ancho de pantalla para smartphone*/
-
-@media screen and (max-width:767px) {
-
-    /* estilos para el index */
-
-    /* estructuro mi seccion de la pagina como grid */
-
-
-    .entrada {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.2fr auto;
-    }
-
-
+@media screen and (max-width: 767px) {
+  /* estilos para el index */
+  /* estructuro mi seccion de la pagina como grid */
+  .entrada {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr auto;
+    padding-left: 10px;
+    padding-right: 10px; }
     .entrada h1 {
-        margin-top: 10px;
-        justify-self: center;
-        display: inline-block;
-    }
-
-    .cuerpo {
-        padding: 10px;
-    }
-
-    /* estructuro mi seccion de la pagina como grid */
-
-
-    .noticias {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        justify-content: center;
-    }
-
-    /* oculto la imagen que tenia en modo escritorio y muestro la imagen para la version tablet */
-
-    .front {
-        display: none;
-    }
-
-    .vertical {
-        display: block;
-    }
-
+      margin-top: 10px;
+      justify-self: center;
+      display: inline-block; }
+  .cuerpo {
+    padding: 10px; }
+  /* estructuro mi seccion de la pagina como grid */
+  .noticias {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-content: center; }
+  /* oculto la imagen que tenia en modo escritorio y muestro la imagen para la version tablet */
+  .front {
+    display: none; }
+  .vertical {
+    display: block; }
     .vertical img {
-        max-width: 100%;
-        height: auto;
-        object-fit: cover;
-    }
+      max-width: 100%;
+      height: auto;
+      object-fit: cover; }
+  .noticia img {
+    width: 300px;
+    height: 245px; }
+  /*estilos para nosotros.html */
+  /* cambio la resolucion del video en .parte-dos */
+  .parte-dos iframe {
+    width: 225px;
+    height: 100px; }
+  /* estructuro mi seccion de la pagina como grid */
+  .productos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px; }
+  /*estilos para contacto.html */
+  .frente-contacto {
+    display: inline-block; }
+  /*cambio la resolucion de la ventana de google maps y del text box para escribir comentarios de consultas*/
+  .link {
+    width: 400px;
+    height: 400px; }
+  #campo {
+    width: 300px;
+    height: 100px; } }
 
-    .noticia img {
-        width: 300px;
-        height: 245px;
-    }
+/* estilos de la etiqueta h*/
+h1 {
+  color: darkred; }
 
-    /*estilos para nosotros.html */
+/* estilos en el header */
+#arriba {
+  background-color: black; }
 
+/* estilo para el footer */
+footer {
+  background-color: black;
+  color: whitesmoke; }
 
-    /* cambio la resolucion del video en .parte-dos */
+footer p {
+  margin: 0; }
 
-    .parte-dos iframe {
-        width: 225px;
-        height: 100px;
-    }
+/* estilos del menu levantado de bootstrap */
+.color-menu {
+  color: whitesmoke; }
 
-    /* estructuro mi seccion de la pagina como grid */
+.color-menu:hover {
+  border-bottom: 2px solid gainsboro;
+  color: whitesmoke; }
 
-    .productos {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 10px;
-    }
-
-
-    /*estilos para contacto.html */
-
-    .frente-contacto {
-        display: inline-block;
-    }
-
-    /*cambio la resolucion de la ventana de google maps y del text box para escribir comentarios de consultas*/
-
-    .link {
-        width: 400px;
-        height: 400px;
-    }
-
-    #campo {
-        width: 300px;
-        height: 100px;
-    }
-
-
-}
+body {
+  background-color: #f9d29d;
+  background-image: linear-gradient(315deg, #f9d29d 0%, #ffd8cb 74%); }

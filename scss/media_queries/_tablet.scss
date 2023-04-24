@@ -1,0 +1,112 @@
+/*defino el ancho de pantalla para tablet*/
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+
+    /* estilos para el index */
+    /* estructuro mi seccion de la pagina como grid */
+
+    .entrada {
+        display: grid;
+        grid-template-columns: 45% 55%;
+        grid-template-rows: 0.2fr 1fr;
+        h1 {
+            margin: 10px;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column: span 2;
+            justify-self: center;
+        }
+        p {
+            grid-column: span 1;
+            justify-self: center;
+            align-self: center;
+        }
+        padding-left: 20px;
+        padding-right: 20px;
+
+    }
+ 
+    /* oculto la imagen que tenia en modo escritorio y muestro la imagen para la version tablet */
+    .front {
+        display: none;
+    }
+
+    .vertical {
+        display: block;
+        grid-column: 2;
+        img {
+            max-width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+
+
+    /* estructuro mi segunda seccion de la pagina como grid */
+
+
+    .noticias {
+        display: grid;
+        grid-template-columns: repeat(2, 0.5fr);
+        grid-template-rows: repeat(2, 0.5fr);
+        gap: 10px;
+    }
+
+    .news h2 {
+        text-align: center;
+    }
+
+    /*estilos para nosotros.html */
+
+    /* cambio la resolucion del video en .parte-dos */
+
+    .parte-dos iframe {
+        width: 600px;
+        height: 338px;
+    }
+
+    /* estructuro mi seccion de la pagina como grid */
+
+
+    .parte-uno {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        p {
+            grid-column: 1;
+            align-self: center;
+        }
+        img {
+            grid-column: 2;
+        }
+    }
+
+
+    /*estilos en store.html*/
+
+
+    .productos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+
+    /*estilos para contacto.html */
+
+    /*cambio la resolucion de la ventana de google maps y del text box para escribir comentarios de consultas*/
+
+
+    .link {
+        width: 500px;
+        height: 400px;
+        max-width: 100%;
+    }
+
+    #campo {
+        width: 300px;
+        height: 100px;
+    }
+
+}

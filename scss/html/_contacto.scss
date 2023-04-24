@@ -1,0 +1,44 @@
+/* estilos de contacto.html */
+
+
+.contacto {
+    width: 300px;
+    margin: auto;
+}
+
+
+.frente-contacto {
+    height: 900px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.1fr 1fr;
+    grid-gap: 10px;
+    h1 {
+        margin: 10px;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column: span 2;
+        justify-self: center;
+    }
+    
+}
+
+.link {
+    width: 700px;
+    height: 600px;
+}
+
+#campo {
+    width: 300px;
+    height: 300px;
+
+}
+
+.mapa {
+    position: relative;
+    bottom: 0;
+}
+
+.direccion p {
+    margin: 0;
+}

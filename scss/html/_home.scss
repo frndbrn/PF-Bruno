@@ -1,0 +1,49 @@
+/*estilos en index.html*/
+
+
+.noticia {
+    margin: 20px;
+    text-align: center;
+    display: inline-block;
+    p {
+        margin-top: 5px;
+    }
+    img {
+        width: 220px;
+        height: 165px;
+    }
+    
+    p:hover {/* pseudoclase para .noticia */
+        background-color: rgb(189, 162, 162);
+    }
+}
+
+
+
+
+.noticias {
+    font-weight: bold;
+}
+
+.frente {
+    /* --> la clase frente del main es compartida por todos menos qa.html */
+    text-align: center;
+    color: black;
+}
+
+.news h2 {
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.entrada {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.vertical {
+    display: none;
+}

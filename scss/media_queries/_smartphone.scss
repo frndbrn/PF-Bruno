@@ -1,0 +1,95 @@
+/*defino el ancho de pantalla para smartphone*/
+
+@media screen and (max-width:767px) {
+
+    /* estilos para el index */
+
+    /* estructuro mi seccion de la pagina como grid */
+
+
+    .entrada {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr auto;
+        h1 {
+            margin-top: 10px;
+            justify-self: center;
+            display: inline-block;
+        }
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .cuerpo {
+        padding: 10px;
+    }
+
+    /* estructuro mi seccion de la pagina como grid */
+
+
+    .noticias {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        justify-content: center;
+    }
+
+    /* oculto la imagen que tenia en modo escritorio y muestro la imagen para la version tablet */
+
+    .front {
+        display: none;
+    }
+
+    .vertical {
+        display: block;
+        img {
+            max-width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+
+    .noticia img {
+        width: 300px;
+        height: 245px;
+    }
+
+    /*estilos para nosotros.html */
+
+
+    /* cambio la resolucion del video en .parte-dos */
+
+    .parte-dos iframe {
+        width: 225px;
+        height: 100px;
+    }
+
+    /* estructuro mi seccion de la pagina como grid */
+
+    .productos {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+
+    /*estilos para contacto.html */
+
+    .frente-contacto {
+        display: inline-block;
+    }
+
+    /*cambio la resolucion de la ventana de google maps y del text box para escribir comentarios de consultas*/
+
+    .link {
+        width: 400px;
+        height: 400px;
+    }
+
+    #campo {
+        width: 300px;
+        height: 100px;
+    }
+
+
+}
