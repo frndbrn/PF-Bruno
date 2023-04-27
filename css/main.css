@@ -24,11 +24,6 @@
 .noticias {
   font-weight: bold; }
 
-.frente {
-  /* --> la clase frente del main es compartida por todos menos qa.html */
-  text-align: center;
-  color: black; }
-
 .news h2 {
   margin-top: 5px;
   font-weight: bold; }
@@ -92,11 +87,12 @@
   margin-top: 50px;
   margin-left: 50px; }
 
-.frente-QA h1 {
-  text-align: center; }
-
-.frente-QA h2 {
-  margin: 0; }
+.frente-QA {
+  min-height: 100vh; }
+  .frente-QA h1 {
+    text-align: center; }
+  .frente-QA h2 {
+    margin: 0; }
 
 ol {
   padding: 20px; }
@@ -266,6 +262,12 @@ h1 {
 #arriba {
   background-color: black; }
 
+/*estilos en el body */
+.frente {
+  /* --> la clase frente del main es compartida por todos menos qa.html y contacto.html */
+  text-align: center;
+  color: black; }
+
 /* estilo para el footer */
 footer {
   background-color: black;
@@ -277,7 +279,7 @@ footer {
 /* estilos del menu levantado de bootstrap */
 .color-menu {
   color: whitesmoke; }
-  .color-menu :hover {
+  .color-menu:hover {
     border-bottom: 2px solid gainsboro;
     color: whitesmoke; }
 

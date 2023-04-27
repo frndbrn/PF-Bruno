@@ -10,35 +10,50 @@
     font-family: 'Roboto', sans-serif;
 }
 
-
+//import de mis html 
 @import "html/home";
 @import "html/nosotros";
 @import "html/store";
 @import "html/qa";
 @import "html/contacto";
+
+//import de mis media queries
 @import "media_queries/tablet";
 @import "media_queries/smartphone";
+
+//import de utilidades (variables, mixin y extend)
+@import "../scss/utilidades/variables";
+@import "../scss/utilidades/mixin";
+@import "../scss/utilidades/extend";
+
 
 
 /* estilos de la etiqueta h*/
 
 
 h1 {
-    color: darkred;
+    color: $color-h1;
 }
 
 /* estilos en el header */
 
 
-
 #arriba {
-    background-color: black;
+    background-color: $color-secundario;
+}
+
+/*estilos en el body */
+
+.frente {
+    /* --> la clase frente del main es compartida por todos menos qa.html y contacto.html */
+    text-align: center;
+    color: black;
 }
 
 /* estilo para el footer */
 
 footer {
-    background-color: black;
+    background-color: $color-secundario;
     color: whitesmoke;
     font-size: 12px;
     p {
@@ -53,14 +68,14 @@ footer {
 
 .color-menu {
     color: whitesmoke;
-    :hover {
+    &:hover {
         border-bottom: 2px solid gainsboro;
         color: whitesmoke;
     }
 }
 
 body{
-    background-color: #f9d29d;
+    background-color: $color-principal;
 background-image: linear-gradient(315deg, #f9d29d 0%, #ffd8cb 74%);
 
 }
