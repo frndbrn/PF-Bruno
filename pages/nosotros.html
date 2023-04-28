@@ -57,7 +57,42 @@
         <div class="parte-uno">       
             <p>Los Estudios Abbey Road, fundados en 1931 por la compañía discográfica EMI en Londres, son uno de los estudios de grabación más famosos e icónicos de la música. A lo largo de su historia, han sido el hogar de muchas leyendas de la música, incluyendo a los Beatles, Pink Floyd, Radiohead, Adele y Coldplay. Los Beatles, en particular, grabaron gran parte de su música aquí, incluyendo su último álbum "Abbey Road", cuya portada con los cuatro miembros de la banda cruzando nuestra calle se ha convertido en una imagen icónica de la cultura pop.
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias facilis officia sit quae libero a nulla hic, repudiandae impedit eveniet, officiis, reiciendis aliquam laboriosam voluptatem cum laborum atque repellat ab.</p>
-            <img src="../img/grabacion.jpg" alt="persona tocando una guitarra en un estudio de abbey road" style="width: 1280px; height: 720px;">
+            <!-- Carrusel tomado de bootstrap -->
+            <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                <div class="carousel-inner">
+                    <div class="carousel-item active carousel-item-left d-flex justify-content-center">
+                      <img src="../img/grabacion.jpg" class="d-block w-50 w-sm-100" alt="persona tocando una guitarra en un estudio de abbey road">
+                      <div class="carousel-caption d-none d-md-block">
+                        <span>Un estudio con mucha historia</span>
+                        <p>Some representative placeholder content for the first slide.</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item carousel-item-next d-flex justify-content-center">
+                      <img src="../img/grabacion_beatles.jpg" class="d-block w-50 w-sm-100" alt="The Beatles grabando en los estudios 2 de Abbey Road">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item carousel-item-next carousel-item-right d-flex  justify-content-center">
+                      <img src="../img/grabacion_pinkfloyd.jpg" class="d-block w-50 w-sm-100" alt="Pink Floyd en la zona de control del estudio de grabacion">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                      </div>
+                    </div>
+                  </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <!-- fin del carrusel -->
+
 
         </div>
         <div class="parte-dos"> <!-- Link a video de Youtube -->

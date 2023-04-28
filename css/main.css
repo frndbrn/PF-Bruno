@@ -31,7 +31,7 @@
 .entrada {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 0.1fr 1fr;
   padding-left: 150px;
   padding-right: 150px; }
 
@@ -48,6 +48,10 @@
   max-width: 100%;
   height: auto;
   object-fit: cover; }
+
+.parte-uno p {
+  padding-left: 150px;
+  padding-right: 150px; }
 
 /*estilos en store.html*/
 .productos {
@@ -169,6 +173,8 @@ ol {
   .news h2 {
     text-align: center; }
   /*estilos para nosotros.html */
+  .parte-uno p {
+    padding: 0; }
   /* cambio la resolucion del video en .parte-dos */
   .parte-dos iframe {
     width: 600px;
@@ -234,6 +240,12 @@ ol {
     width: 300px;
     height: 245px; }
   /*estilos para nosotros.html */
+  .parte-uno p {
+    padding: 0; }
+  .w-sm-75 {
+    width: 75% !important; }
+  .w-sm-100 {
+    width: 100% !important; }
   /* cambio la resolucion del video en .parte-dos */
   .parte-dos iframe {
     width: 225px;
@@ -271,8 +283,9 @@ h1 {
 /* estilo para el footer */
 footer {
   background-color: black;
-  color: whitesmoke;
-  font-size: 12px; }
+  color: whitesmoke; }
+  footer h3 {
+    font-size: 1rem; }
   footer p {
     margin: 0; }
 
