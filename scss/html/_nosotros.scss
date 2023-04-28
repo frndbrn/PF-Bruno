@@ -1,5 +1,5 @@
 // estilos de mi pagina nosotros
-
+@import "../utilidades/variables";
 
 /* estilos en nosotros.html */
 
@@ -19,10 +19,26 @@
     object-fit: cover;
     }
     p{
+        font-size: 20px;
     padding-left: 150px;
     padding-right: 150px;
     }
 
-
 } 
+.imagen-vertical-1{
+    display: none;
+}
+.imagen-vertical-2{
+    display: none;
+}
+
+#carouselExampleFade{
+    background-color: #cfbeb9;
+}
+
+.carousel-caption{
+    h2{
+        color: #ff7885;
+    }
+}
 

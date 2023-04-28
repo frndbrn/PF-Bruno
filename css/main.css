@@ -21,6 +21,9 @@
     /* pseudoclase para .noticia */
     background-color: #bda2a2; }
 
+.cuerpo {
+  font-size: 20px; }
+
 .noticias {
   font-weight: bold; }
 
@@ -50,8 +53,21 @@
   object-fit: cover; }
 
 .parte-uno p {
+  font-size: 20px;
   padding-left: 150px;
   padding-right: 150px; }
+
+.imagen-vertical-1 {
+  display: none; }
+
+.imagen-vertical-2 {
+  display: none; }
+
+#carouselExampleFade {
+  background-color: #cfbeb9; }
+
+.carousel-caption h2 {
+  color: #ff7885; }
 
 /*estilos en store.html*/
 .productos {
@@ -175,6 +191,12 @@ ol {
   /*estilos para nosotros.html */
   .parte-uno p {
     padding: 0; }
+  #carouselExampleFade {
+    display: none; }
+  .imagen-vertical-1 {
+    display: block; }
+  .imagen-vertical-2 {
+    display: block; }
   /* cambio la resolucion del video en .parte-dos */
   .parte-dos iframe {
     width: 600px;
@@ -297,5 +319,5 @@ footer {
     color: whitesmoke; }
 
 body {
-  background-color: #f9d29d;
-  background-image: linear-gradient(315deg, #f9d29d 0%, #ffd8cb 74%); }
+  background-color: #fdf3e4;
+  background-image: linear-gradient(315deg, #eedfca 0%, #f3f1f0 74%); }
