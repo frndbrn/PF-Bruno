@@ -3,14 +3,6 @@
 
 /* estilos en nosotros.html */
 
-/* cambio la resolucion del video en .parte-dos */
-
-.parte-dos {
-    iframe {
-    width: 800px;
-    height: 450px;
-    }
-}
 
 .parte-uno{
     img {
@@ -23,22 +15,31 @@
     padding-left: 150px;
     padding-right: 150px;
     }
-
+    .imagen-vertical-1{
+        display: none;
+    }
+    .imagen-vertical-2{
+        display: none;
+    }
+    
+    #carouselExampleFade{
+        background-color: #cfbeb9;
+        .carousel-caption{
+            h2{
+                color: #ff7885;
+            }
+        }
+    }
+    
 } 
-.imagen-vertical-1{
-    display: none;
-}
-.imagen-vertical-2{
-    display: none;
-}
+/* cambio la resolucion del video en .parte-dos */
 
-#carouselExampleFade{
-    background-color: #cfbeb9;
-}
-
-.carousel-caption{
-    h2{
-        color: #ff7885;
+.parte-dos {
+    iframe {
+    width: 800px;
+    height: 450px;
     }
 }
+
+
 

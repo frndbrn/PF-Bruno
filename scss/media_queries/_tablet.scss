@@ -11,6 +11,9 @@
         display: grid;
         grid-template-columns: 45% 55%;
         grid-template-rows: 0.2fr 1fr;
+        padding-left: 20px;
+        padding-right: 20px;
+
         h1 {
             margin: 10px;
             grid-row-start: 1;
@@ -18,72 +21,50 @@
             grid-column: span 2;
             justify-self: center;
         }
+
         p {
             grid-column: span 1;
             justify-self: center;
             align-self: center;
         }
-        padding-left: 20px;
-        padding-right: 20px;
 
-    }
- 
-    /* oculto la imagen que tenia en modo escritorio y muestro la imagen para la version tablet */
-    .front {
-        display: none;
-    }
-
-    .vertical {
-        display: block;
-        grid-column: 2;
-        img {
-            max-width: 100%;
-            height: auto;
-            object-fit: cover;
+        .front {
+            display: none;
         }
-    }
 
+        /* oculto la imagen que tenia en modo escritorio y muestro la imagen para la version tablet */
+        .vertical {
+            display: block;
+            grid-column: 2;
+
+            img {
+                max-width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+        }
+
+    }
 
     /* estructuro mi segunda seccion de la pagina como grid */
 
+    .news {
+        h2 {
+            text-align: center;
+        }
 
-    .noticias {
-        display: grid;
-        grid-template-columns: repeat(2, 0.5fr);
-        grid-template-rows: repeat(2, 0.5fr);
-        gap: 10px;
-    }
-
-    .news h2 {
-        text-align: center;
-    }
-
-    /*estilos para nosotros.html */
-
-    .parte-uno{
-        p{
-            padding: 0;
+        .noticias {
+            display: grid;
+            grid-template-columns: repeat(2, 0.5fr);
+            grid-template-rows: repeat(2, 0.5fr);
+            gap: 10px;
         }
     }
 
-    #carouselExampleFade{
-        display: none;
-    }
 
-    .imagen-vertical-1{
-        display: block;
-    }
 
-    .imagen-vertical-2{
-        display: block;
-    }
 
-    /* cambio la resolucion del video en .parte-dos */
-
-    .parte-dos iframe {
-        width: 600px;
-        height: 338px;
-    }
+    /*estilos para nosotros.html */
 
     /* estructuro mi seccion de la pagina como grid */
 
@@ -92,14 +73,38 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
+
         p {
             grid-column: 1;
             align-self: center;
+            padding: 0;
         }
+
         img {
             grid-column: 2;
         }
+        #carouselExampleFade {
+            display: none;
+        }
+    
+        .imagen-vertical-1 {
+            display: block;
+        }
+    
+        .imagen-vertical-2 {
+            display: block;
+        }
     }
+
+
+    /* cambio la resolucion del video en .parte-dos */
+
+    .parte-dos iframe {
+        width: 600px;
+        height: 338px;
+    }
+
+
 
 
     /*estilos en store.html*/
@@ -118,15 +123,23 @@
     /*cambio la resolucion de la ventana de google maps y del text box para escribir comentarios de consultas*/
 
 
-    .link {
-        width: 500px;
-        height: 400px;
-        max-width: 100%;
-    }
+    .frente-contacto {
+        .contacto {
+            .comentario {
+                #campo {
+                    width: 300px;
+                    height: 100px;
+                }
+            }
+        }
 
-    #campo {
-        width: 300px;
-        height: 100px;
+        .direccion {
+            .link {
+                width: 500px;
+                height: 400px;
+                max-width: 100%;
+            }
+        }
     }
 
 }

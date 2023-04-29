@@ -8,45 +8,37 @@
   font-family: 'Roboto', sans-serif; }
 
 /*estilos en index.html*/
-.noticia {
-  margin: 20px;
-  text-align: center;
-  display: inline-block; }
-  .noticia p {
-    margin-top: 5px; }
-  .noticia img {
-    width: 220px;
-    height: 165px; }
-  .noticia p:hover {
-    /* pseudoclase para .noticia */
-    background-color: #bda2a2; }
-
-.cuerpo {
-  font-size: 20px; }
-
-.noticias {
-  font-weight: bold; }
-
-.news h2 {
-  margin-top: 5px;
-  font-weight: bold; }
-
 .entrada {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 0.1fr 1fr;
   padding-left: 150px;
   padding-right: 150px; }
+  .entrada .cuerpo {
+    font-size: 20px; }
+  .entrada .vertical {
+    display: none; }
 
-.vertical {
-  display: none; }
+.news h2 {
+  margin-top: 5px;
+  font-weight: bold; }
+
+.news .noticias {
+  font-weight: bold; }
+  .news .noticias .noticia {
+    margin: 20px;
+    text-align: center;
+    display: inline-block; }
+    .news .noticias .noticia p {
+      margin-top: 5px; }
+      .news .noticias .noticia p:hover {
+        /* pseudoclase para .noticia */
+        background-color: #bda2a2; }
+    .news .noticias .noticia img {
+      width: 220px;
+      height: 165px; }
 
 /* estilos en nosotros.html */
-/* cambio la resolucion del video en .parte-dos */
-.parte-dos iframe {
-  width: 800px;
-  height: 450px; }
-
 .parte-uno img {
   max-width: 100%;
   height: auto;
@@ -57,17 +49,21 @@
   padding-left: 150px;
   padding-right: 150px; }
 
-.imagen-vertical-1 {
+.parte-uno .imagen-vertical-1 {
   display: none; }
 
-.imagen-vertical-2 {
+.parte-uno .imagen-vertical-2 {
   display: none; }
 
-#carouselExampleFade {
+.parte-uno #carouselExampleFade {
   background-color: #cfbeb9; }
+  .parte-uno #carouselExampleFade .carousel-caption h2 {
+    color: #ff7885; }
 
-.carousel-caption h2 {
-  color: #ff7885; }
+/* cambio la resolucion del video en .parte-dos */
+.parte-dos iframe {
+  width: 800px;
+  height: 450px; }
 
 /*estilos en store.html*/
 .productos {
@@ -75,53 +71,41 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   gap: 10px; }
-
-.caja {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center; }
-  .caja img {
-    border: 10px double black; }
-  .caja button:hover {
-    background-color: #bbbbbb; }
-  .caja button:active {
-    background-color: #2c2c2c;
-    color: white; }
-
-.comprar {
-  margin-top: 20px;
-  padding: 10px;
-  border: 2px solid black; }
-
-.deseados {
-  margin-top: 20px;
-  margin-bottom: 10px;
-  padding: 10px;
-  border: 2px solid black; }
+  .productos .caja {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; }
+    .productos .caja img {
+      border: 10px double black; }
+    .productos .caja .compra {
+      margin-top: 20px;
+      margin-bottom: 5px;
+      padding: 10px;
+      border: 2px solid black; }
+      .productos .caja .compra:hover {
+        background-color: #bbbbbb;
+        transition: background-color 0.2s ease-in-out; }
+      .productos .caja .compra:active {
+        background-color: #2c2c2c;
+        color: white; }
 
 /* pseudoclase para .caja */
 /*estilos de qa.html*/
-.preguntas {
-  margin-top: 50px;
-  margin-left: 50px; }
-
 .frente-QA {
   min-height: 100vh; }
   .frente-QA h1 {
     text-align: center; }
+  .frente-QA .preguntas {
+    margin-top: 50px;
+    margin-left: 50px; }
+    .frente-QA .preguntas ol {
+      padding: 20px; }
   .frente-QA h2 {
     margin: 0; }
 
-ol {
-  padding: 20px; }
-
 /* estilos de contacto.html */
-.contacto {
-  width: 300px;
-  margin: auto; }
-
 .frente-contacto {
   height: 900px;
   display: grid;
@@ -134,21 +118,17 @@ ol {
     grid-row-end: 2;
     grid-column: span 2;
     justify-self: center; }
-
-.link {
-  width: 700px;
-  height: 600px; }
-
-#campo {
-  width: 300px;
-  height: 300px; }
-
-.mapa {
-  position: relative;
-  bottom: 0; }
-
-.direccion p {
-  margin: 0; }
+  .frente-contacto .contacto {
+    width: 300px;
+    margin: auto; }
+    .frente-contacto .contacto .comentario #campo {
+      width: 300px;
+      height: 300px; }
+  .frente-contacto .direccion .link {
+    width: 700px;
+    height: 600px; }
+  .frente-contacto .direccion p {
+    margin: 0; }
 
 /*defino el ancho de pantalla para tablet*/
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -159,7 +139,8 @@ ol {
     grid-template-columns: 45% 55%;
     grid-template-rows: 0.2fr 1fr;
     padding-left: 20px;
-    padding-right: 20px; }
+    padding-right: 20px;
+    /* oculto la imagen que tenia en modo escritorio y muestro la imagen para la version tablet */ }
     .entrada h1 {
       margin: 10px;
       grid-row-start: 1;
@@ -170,37 +151,24 @@ ol {
       grid-column: span 1;
       justify-self: center;
       align-self: center; }
-  /* oculto la imagen que tenia en modo escritorio y muestro la imagen para la version tablet */
-  .front {
-    display: none; }
-  .vertical {
-    display: block;
-    grid-column: 2; }
-    .vertical img {
-      max-width: 100%;
-      height: auto;
-      object-fit: cover; }
+    .entrada .front {
+      display: none; }
+    .entrada .vertical {
+      display: block;
+      grid-column: 2; }
+      .entrada .vertical img {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover; }
   /* estructuro mi segunda seccion de la pagina como grid */
-  .noticias {
+  .news h2 {
+    text-align: center; }
+  .news .noticias {
     display: grid;
     grid-template-columns: repeat(2, 0.5fr);
     grid-template-rows: repeat(2, 0.5fr);
     gap: 10px; }
-  .news h2 {
-    text-align: center; }
   /*estilos para nosotros.html */
-  .parte-uno p {
-    padding: 0; }
-  #carouselExampleFade {
-    display: none; }
-  .imagen-vertical-1 {
-    display: block; }
-  .imagen-vertical-2 {
-    display: block; }
-  /* cambio la resolucion del video en .parte-dos */
-  .parte-dos iframe {
-    width: 600px;
-    height: 338px; }
   /* estructuro mi seccion de la pagina como grid */
   .parte-uno {
     display: grid;
@@ -208,9 +176,20 @@ ol {
     grid-template-rows: auto; }
     .parte-uno p {
       grid-column: 1;
-      align-self: center; }
+      align-self: center;
+      padding: 0; }
     .parte-uno img {
       grid-column: 2; }
+    .parte-uno #carouselExampleFade {
+      display: none; }
+    .parte-uno .imagen-vertical-1 {
+      display: block; }
+    .parte-uno .imagen-vertical-2 {
+      display: block; }
+  /* cambio la resolucion del video en .parte-dos */
+  .parte-dos iframe {
+    width: 600px;
+    height: 338px; }
   /*estilos en store.html*/
   .productos {
     display: grid;
@@ -219,13 +198,13 @@ ol {
     gap: 10px; }
   /*estilos para contacto.html */
   /*cambio la resolucion de la ventana de google maps y del text box para escribir comentarios de consultas*/
-  .link {
+  .frente-contacto .contacto .comentario #campo {
+    width: 300px;
+    height: 100px; }
+  .frente-contacto .direccion .link {
     width: 500px;
     height: 400px;
-    max-width: 100%; }
-  #campo {
-    width: 300px;
-    height: 100px; } }
+    max-width: 100%; } }
 
 /*defino el ancho de pantalla para smartphone*/
 @media screen and (max-width: 767px) {
@@ -236,42 +215,43 @@ ol {
     grid-template-columns: 1fr;
     grid-template-rows: 0.2fr auto;
     padding-left: 10px;
-    padding-right: 10px; }
+    padding-right: 10px;
+    /* oculto la imagen que tenia en modo escritorio y muestro la imagen para la version tablet */ }
     .entrada h1 {
       margin-top: 10px;
       justify-self: center;
       display: inline-block; }
-  .cuerpo {
-    padding: 10px; }
+    .entrada .cuerpo {
+      padding: 10px; }
+    .entrada .front {
+      display: none; }
+    .entrada .vertical {
+      display: block; }
+      .entrada .vertical img {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover; }
   /* estructuro mi seccion de la pagina como grid */
   .noticias {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     justify-content: center; }
-  /* oculto la imagen que tenia en modo escritorio y muestro la imagen para la version tablet */
-  .front {
-    display: none; }
-  .vertical {
-    display: block; }
-    .vertical img {
-      max-width: 100%;
-      height: auto;
-      object-fit: cover; }
-  .noticia img {
-    width: 300px;
-    height: 245px; }
+    .noticias .noticia img {
+      width: 300px;
+      height: 245px; }
   /*estilos para nosotros.html */
   .parte-uno p {
     padding: 0; }
-  .w-sm-75 {
+  .parte-uno .w-sm-75 {
     width: 75% !important; }
-  .w-sm-100 {
+  .parte-uno .w-sm-100 {
     width: 100% !important; }
   /* cambio la resolucion del video en .parte-dos */
   .parte-dos iframe {
     width: 225px;
     height: 100px; }
+  /** estilos para store.html */
   /* estructuro mi seccion de la pagina como grid */
   .productos {
     display: grid;
@@ -280,13 +260,13 @@ ol {
   /*estilos para contacto.html */
   .frente-contacto {
     display: inline-block; }
-  /*cambio la resolucion de la ventana de google maps y del text box para escribir comentarios de consultas*/
-  .link {
-    width: 400px;
-    height: 400px; }
-  #campo {
-    width: 300px;
-    height: 100px; } }
+    .frente-contacto .contacto .comentario #campo {
+      width: 300px;
+      height: 100px; }
+    .frente-contacto .direccion .link {
+      width: 400px;
+      height: 400px; }
+  /*cambio la resolucion de la ventana de google maps y del text box para escribir comentarios de consultas*/ }
 
 /* estilos de la etiqueta h*/
 h1 {

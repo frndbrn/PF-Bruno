@@ -2,48 +2,55 @@
 
 /*estilos en index.html*/
 
+//import de mixin
 
-.noticia {
-    margin: 20px;
-    text-align: center;
-    display: inline-block;
-    p {
-        margin-top: 5px;
-    }
-    img {
-        width: 220px;
-        height: 165px;
+    .entrada {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 1fr;
+        padding-left: 150px;
+        padding-right: 150px;
+        .cuerpo{
+            font-size: 20px;
+        }
+        .vertical {
+            display: none;
+        }
+        
     }
     
-    p:hover {/* pseudoclase para .noticia */
-        background-color: rgb(189, 162, 162);
+    
+    .news {
+        h2 {
+            margin-top: 5px;
+            font-weight: bold;
+        }
+        .noticias {
+            font-weight: bold;
+            .noticia {
+                margin: 20px;
+                text-align: center;
+                display: inline-block;
+                p {
+                    margin-top: 5px;
+                    &:hover {/* pseudoclase para .noticia */
+                        background-color: rgb(189, 162, 162);
+                    }
+                }
+                img {
+                    width: 220px;
+                    height: 165px;
+                }
+                
+                
+                
+            }
+        }
     }
-}
-
-.cuerpo{
-    font-size: 20px;
-}
+    
 
 
 
-.noticias {
-    font-weight: bold;
-}
 
 
-.news h2 {
-    margin-top: 5px;
-    font-weight: bold;
-}
 
-.entrada {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr 1fr;
-    padding-left: 150px;
-    padding-right: 150px;
-}
-
-.vertical {
-    display: none;
-}

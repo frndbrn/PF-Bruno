@@ -13,17 +13,31 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 0.2fr auto;
+        padding-left: 10px;
+        padding-right: 10px;
+
         h1 {
             margin-top: 10px;
             justify-self: center;
             display: inline-block;
         }
-        padding-left: 10px;
-        padding-right: 10px;
-    }
 
-    .cuerpo {
-        padding: 10px;
+        .cuerpo {
+            padding: 10px;
+        }
+        .front {
+            display: none;
+        }
+        /* oculto la imagen que tenia en modo escritorio y muestro la imagen para la version tablet */
+        .vertical {
+            display: block;
+    
+            img {
+                max-width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+        }
     }
 
     /* estructuro mi seccion de la pagina como grid */
@@ -34,41 +48,28 @@
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         justify-content: center;
-    }
-
-    /* oculto la imagen que tenia en modo escritorio y muestro la imagen para la version tablet */
-
-    .front {
-        display: none;
-    }
-
-    .vertical {
-        display: block;
-        img {
-            max-width: 100%;
-            height: auto;
-            object-fit: cover;
+        .noticia{
+            img{
+                width: 300px;
+                height: 245px;
+            }
         }
-    }
-
-    .noticia img {
-        width: 300px;
-        height: 245px;
     }
 
     /*estilos para nosotros.html */
 
-    .parte-uno{
-        p{
+    .parte-uno {
+        p {
             padding: 0;
         }
-    }
-
-    .w-sm-75 {
-        width: 75% !important;
-    }
-      .w-sm-100 {
-        width: 100% !important;
+        .w-sm-75 {
+            width: 75% !important;
+        }
+    
+        .w-sm-100 {
+            width: 100% !important;
+        }
+    
     }
 
     /* cambio la resolucion del video en .parte-dos */
@@ -78,6 +79,8 @@
         height: 100px;
     }
 
+
+    /** estilos para store.html */
     /* estructuro mi seccion de la pagina como grid */
 
     .productos {
@@ -91,19 +94,30 @@
 
     .frente-contacto {
         display: inline-block;
+        .contacto{
+           .comentario {
+            #campo {
+                width: 300px;
+                height: 100px;
+            }
+        } 
+        }
+        
+
+        .direccion {
+            .link {
+                width: 400px;
+                height: 400px;
+            }
+        }
     }
 
     /*cambio la resolucion de la ventana de google maps y del text box para escribir comentarios de consultas*/
 
-    .link {
-        width: 400px;
-        height: 400px;
-    }
 
-    #campo {
-        width: 300px;
-        height: 100px;
-    }
+
+
+
 
 
 }
