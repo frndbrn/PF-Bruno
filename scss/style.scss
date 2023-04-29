@@ -54,7 +54,7 @@ h1 {
 
 footer {
     background-color: $color-secundario;
-    color: whitesmoke;
+    color: $color-texto;
     h3{
         font-size: 1rem;
     }
@@ -68,13 +68,31 @@ footer {
 
 /* estilos del menu levantado de bootstrap */
 
-.color-menu {
-    color: whitesmoke;
-    &:hover {
-        border-bottom: 2px solid gainsboro;
-        color: whitesmoke;
+//animación para cuando pongo el cursor encima del menú
+.navbar{
+    .container-fluid{
+        .collapse{
+            .navbar-nav{
+                a {
+                    text-decoration: none;
+                    color: $color-texto;
+                    transition: all 0.5s;
+                    background-image: linear-gradient(#cf1313, #d46565),
+                      linear-gradient(transparent, transparent);
+                    background-size: 0 2px, auto;
+                    background-repeat: no-repeat;
+                    background-position:  bottom;
+                    transition: all 0.2s ease-out;
+                  }
+                  a:hover {
+                    opacity: 0.6;
+                    background-size: 100% 2px, auto;
+                  }
+            }
+        }
     }
 }
+
 
 body{
     background-color: $color-principal;

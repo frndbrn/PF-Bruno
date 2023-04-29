@@ -35,6 +35,7 @@
                     margin-top: 5px;
                     &:hover {/* pseudoclase para .noticia */
                         background-color: rgb(189, 162, 162);
+                        transition: background-color 0.2s ease-in-out;
                     }
                 }
                 img {
