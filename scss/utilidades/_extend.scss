@@ -1,0 +1,25 @@
+// estilo de botones
+@import "../utilidades/variables";
+
+%botones {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+%subrayado {
+    text-decoration: none;
+    transition: all 0.5s;
+    background-image: linear-gradient(#cf1313, #d46565),
+        linear-gradient(transparent, transparent);
+    background-size: 0 2px, auto;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    transition: all 0.2s ease-out;
+}
+
+%efecto-sub {
+    opacity: 0.6;
+    background-size: 100% 2px, auto;
+}

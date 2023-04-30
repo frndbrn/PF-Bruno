@@ -1,5 +1,9 @@
 //estilos de mi pagina contacto
 
+//import de mixin y extend
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+
 /* estilos de contacto.html */
 
 
@@ -24,8 +28,7 @@
 
         .comentario {
             #campo {
-                width: 300px;
-                height: 300px;
+                @include box(300px, 300px);
             }
         }
 
@@ -33,8 +36,7 @@
 
     .direccion {
         .link {
-            width: 700px;
-            height: 600px;
+            @include box(700px, 600px);
         }
 
         p {

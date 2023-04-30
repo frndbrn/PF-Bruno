@@ -1,8 +1,11 @@
-// estilos para botones
+// estilos de mixin
 
-@mixin boton-compra{
-    margin-top: 20px;
-    margin-bottom: 5px;
-    padding: 10px;
-    border: 2px solid black;
+@mixin box($width, $height){
+    width: $width;
+    height: $height;
+}
+
+@mixin pad($left, $right){
+    padding-left: $left;
+    padding-right: $right;
 }

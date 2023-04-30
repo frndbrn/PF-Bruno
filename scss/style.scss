@@ -28,7 +28,7 @@
 
 
 
-/* estilos de la etiqueta h*/
+/* estilos de la etiqueta h1*/
 
 
 h1 {
@@ -47,7 +47,7 @@ h1 {
 .frente {
     /* --> la clase frente del main es compartida por todos menos qa.html y contacto.html */
     text-align: center;
-    color: black;
+    color: $color-secundario;
 }
 
 /* estilo para el footer */
@@ -55,47 +55,42 @@ h1 {
 footer {
     background-color: $color-secundario;
     color: $color-texto;
-    h3{
+
+    h3 {
         font-size: 1rem;
     }
+
     p {
         margin: 0;
     }
-    
+
 }
 
- 
+
 
 /* estilos del menu levantado de bootstrap */
 
 //animación para cuando pongo el cursor encima del menú
-.navbar{
-    .container-fluid{
-        .collapse{
-            .navbar-nav{
+.navbar {
+    .container-fluid {
+        .collapse {
+            .navbar-nav {
                 a {
-                    text-decoration: none;
+                    @extend %subrayado;
                     color: $color-texto;
-                    transition: all 0.5s;
-                    background-image: linear-gradient(#cf1313, #d46565),
-                      linear-gradient(transparent, transparent);
-                    background-size: 0 2px, auto;
-                    background-repeat: no-repeat;
-                    background-position:  bottom;
-                    transition: all 0.2s ease-out;
-                  }
-                  a:hover {
-                    opacity: 0.6;
-                    background-size: 100% 2px, auto;
-                  }
+                }
+
+                a:hover {
+                    @extend %efecto-sub;
+                }
             }
         }
     }
 }
 
 
-body{
+body {
     background-color: $color-principal;
-background-image: linear-gradient(315deg, #eedfca 0%, #f3f1f0 74%);
+    background-image: linear-gradient(315deg, #eedfca 0%, #f3f1f0 74%);
 
 }

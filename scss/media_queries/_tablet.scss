@@ -1,3 +1,6 @@
+//inclusion de mixin y extend
+@import "../utilidades/extend";
+@import "../utilidades/mixin";
 //media queries para tablet exclusivamente
 
 /*defino el ancho de pantalla para tablet*/
@@ -11,8 +14,7 @@
         display: grid;
         grid-template-columns: 45% 55%;
         grid-template-rows: 0.2fr 1fr;
-        padding-left: 20px;
-        padding-right: 20px;
+        @include pad(20px, 20px);
 
         h1 {
             margin: 10px;
@@ -87,21 +89,17 @@
             display: none;
         }
     
-        .imagen-vertical-1 {
+        .imagen-vertical-1, .imagen-vertical-2 {
             display: block;
         }
     
-        .imagen-vertical-2 {
-            display: block;
-        }
     }
 
 
     /* cambio la resolucion del video en .parte-dos */
 
     .parte-dos iframe {
-        width: 600px;
-        height: 338px;
+        @include box(600px, 338px);
     }
 
 
@@ -127,16 +125,14 @@
         .contacto {
             .comentario {
                 #campo {
-                    width: 300px;
-                    height: 100px;
+                    @include box(300px, 100px);
                 }
             }
         }
 
         .direccion {
             .link {
-                width: 500px;
-                height: 400px;
+                @include box(500px, 400px);
                 max-width: 100%;
             }
         }

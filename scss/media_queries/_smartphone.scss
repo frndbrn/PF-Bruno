@@ -1,3 +1,8 @@
+//inclusion de mixin y extend
+@import "../utilidades/extend";
+@import "../utilidades/mixin";
+
+
 //media queries para smartphone exclusivamente
 
 /*defino el ancho de pantalla para smartphone*/
@@ -13,8 +18,7 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 0.2fr auto;
-        padding-left: 10px;
-        padding-right: 10px;
+        @include pad(10px, 10px);
 
         h1 {
             margin-top: 10px;
@@ -50,8 +54,7 @@
         justify-content: center;
         .noticia{
             img{
-                width: 300px;
-                height: 245px;
+                @include box(300px, 245px);
             }
         }
     }
@@ -75,8 +78,7 @@
     /* cambio la resolucion del video en .parte-dos */
 
     .parte-dos iframe {
-        width: 225px;
-        height: 100px;
+        @include box(225px, 120px);
     }
 
 
@@ -97,8 +99,7 @@
         .contacto{
            .comentario {
             #campo {
-                width: 300px;
-                height: 100px;
+                @include box (300px, 100px);
             }
         } 
         }
@@ -106,13 +107,11 @@
 
         .direccion {
             .link {
-                width: 400px;
-                height: 400px;
+                @include box (400px, 400px);
             }
         }
     }
 
-    /*cambio la resolucion de la ventana de google maps y del text box para escribir comentarios de consultas*/
 
 
 

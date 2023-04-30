@@ -1,57 +1,61 @@
+//import de mixin y extend
+
+@import "../utilidades/extend";
+@import "../utilidades/mixin";
+
 // estilos de mi pagina principal home
 
 /*estilos en index.html*/
 
-//import de mixin
 
-    .entrada {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.1fr 1fr;
-        padding-left: 150px;
-        padding-right: 150px;
-        .cuerpo{
-            font-size: 20px;
-        }
-        .vertical {
-            display: none;
-        }
-        
+
+.entrada {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 1fr;
+    @include pad(150px, 150px);
+
+    .cuerpo {
+        font-size: 20px;
     }
-    
-    
-    .news {
-        h2 {
-            margin-top: 5px;
-            font-weight: bold;
-        }
-        .noticias {
-            font-weight: bold;
-            .noticia {
-                margin: 20px;
-                text-align: center;
-                display: inline-block;
-                p {
-                    margin-top: 5px;
-                    &:hover {/* pseudoclase para .noticia */
-                        background-color: rgb(189, 162, 162);
-                        transition: background-color 0.2s ease-in-out;
-                    }
+
+    .vertical {
+        display: none;
+    }
+
+}
+
+
+.news {
+    h2 {
+        margin-top: 5px;
+        font-weight: bold;
+    }
+
+    .noticias {
+        font-weight: bold;
+
+        .noticia {
+            margin: 20px;
+            text-align: center;
+            display: inline-block;
+
+            p {
+                margin-top: 5px;
+                @extend %subrayado;
+                color: $color-secundario;
+
+                &:hover {
+                    @extend %efecto-sub;
                 }
-                img {
-                    width: 220px;
-                    height: 165px;
-                }
-                
-                
-                
             }
+
+            img {
+                @include box(220px, 165px);
+            }
+
+
+
         }
     }
-    
-
-
-
-
-
-
+}
