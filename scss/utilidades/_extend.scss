@@ -1,5 +1,7 @@
-// estilo de botones
+// import de va
 @import "../utilidades/variables";
+
+// estilo para botones
 
 %botones {
     margin-top: 20px;
@@ -7,6 +9,8 @@
     padding: 10px;
     border: 2px solid black;
 }
+
+// estilo para animacion de subrayado
 
 %subrayado {
     text-decoration: none;

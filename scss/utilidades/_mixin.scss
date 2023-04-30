@@ -1,9 +1,11 @@
 // estilos de mixin
-
+// para alto y ancho
 @mixin box($width, $height){
     width: $width;
     height: $height;
 }
+
+//para padding
 
 @mixin pad($left, $right){
     padding-left: $left;

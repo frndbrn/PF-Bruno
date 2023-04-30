@@ -43,7 +43,7 @@
             p {
                 margin-top: 5px;
                 @extend %subrayado;
-                color: $color-secundario;
+                color: $color-texto-dos;
 
                 &:hover {
                     @extend %efecto-sub;
