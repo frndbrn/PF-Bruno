@@ -55,13 +55,22 @@ h1 {
 footer {
     background-color: $color-secundario;
     color: $color-texto-uno;
+    @include flexing(flex, space-between, flex-start);
 
-    h3 {
-        font-size: 1rem;
+    .izquierda {
+        h3 {
+            font-size: 1rem;
+            margin: 0;
+        }
+
+        p {
+            margin: 0;
+        }
     }
 
-    p {
-        margin: 0;
+
+    .redes {
+        @include flexing(flex, flex-end, center);
     }
 
 }

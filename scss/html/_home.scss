@@ -7,8 +7,6 @@
 
 /*estilos en index.html*/
 
-
-
 .entrada {
     display: grid;
     grid-template-columns: 1fr;
@@ -24,7 +22,6 @@
     }
 
 }
-
 
 .news {
     h2 {
@@ -53,8 +50,6 @@
             img {
                 @include box(220px, 165px);
             }
-
-
 
         }
     }

@@ -406,11 +406,19 @@ h1 {
 /* estilo para el footer */
 footer {
   background-color: black;
-  color: whitesmoke; }
-  footer h3 {
-    font-size: 1rem; }
-  footer p {
+  color: whitesmoke;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; }
+  footer .izquierda h3 {
+    font-size: 1rem;
     margin: 0; }
+  footer .izquierda p {
+    margin: 0; }
+  footer .redes {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
 
 /* estilos del menu levantado de bootstrap */
 .navbar .container-fluid .collapse .navbar-nav a {

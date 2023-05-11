@@ -11,3 +11,11 @@
     padding-left: $left;
     padding-right: $right;
 }
+
+//para flex
+
+@mixin flexing($display, $justi, $align){
+    display: $display;
+    justify-content: $justi;
+    align-items: $align;
+}

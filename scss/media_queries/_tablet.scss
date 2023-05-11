@@ -63,13 +63,9 @@
         }
     }
 
-
-
-
     /*estilos para nosotros.html */
 
     /* estructuro mi seccion de la pagina como grid */
-
 
     .parte-uno {
         display: grid;
@@ -95,18 +91,13 @@
     
     }
 
-
     /* cambio la resolucion del video en .parte-dos */
 
     .parte-dos iframe {
         @include box(600px, 338px);
     }
 
-
-
-
     /*estilos en store.html*/
-
 
     .productos {
         display: grid;
@@ -115,11 +106,9 @@
         gap: 10px;
     }
 
-
     /*estilos para contacto.html */
 
     /*cambio la resolucion de la ventana de google maps y del text box para escribir comentarios de consultas*/
-
 
     .frente-contacto {
         .contacto {
